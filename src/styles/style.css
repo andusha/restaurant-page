@@ -1,19 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
 
-body {
+#content{
     min-height: 100vh;
     height: 100%;
-}
-#content{
-    width: 60%;
-    margin: auto;
+    background-color: rgb(44, 44, 44); 
 }
 .main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;  
+    color: rgb(191, 191, 191);
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  
 }
 .image{
     width: 250px;
     height: 250px;
     border-radius: 250px;
 }
+.home{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.header{
+    height: 20vh;
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.header__buttons{
+    display: flex;
+    gap: 5rem;
+}
+button{
+    background: transparent;
+    color:rgb(65, 109, 109);
+    font-size: 1.5rem;
+}
+p, h1{
+    margin: 0;
+}
+.name{
+    font-size: 2.5rem;
+    font-family: 'Calligraffitti', cursive;
+    color: aquamarine;
+
+}
+.menu__elem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu__p{
+    width: 65%;
+    text-align: center;
+}
+hr{
+    width: 60%;
+}
+.menu{
+    text-align: center;
+    padding: 1rem;
+}
+
+
+

@@ -2,8 +2,8 @@
 import chef from '../assets/2.jpg'
 
 function home() {
-    const main = document.createElement('main');
-    main.classList.add('main')
+    const home = document.createElement('div');
+    home.classList.add('home')
 
     const h1 = document.createElement('h1');
     h1.innerHTML = 'Best pizza'
@@ -15,16 +15,15 @@ function home() {
     const p = document.createElement('p')
     p.innerHTML = 'Order online or visit us!'
 
-    main.appendChild(h1)
-    main.appendChild(img)
-    main.appendChild(p)
-    return main
+    home.appendChild(h1)
+    home.appendChild(img)
+    home.appendChild(p)
+    return home
 }
 
 function loadHome() {
-    const main = document.getElementById("content");
+    const main = document.querySelector('.main')
     main.appendChild(home())
-
 }
 
 export default loadHome;
